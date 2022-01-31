@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto:ital,wght@1,100&display=swap");
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 49, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+h1 {
+  color: #ffff;
+}
+
+.table {
+  --bs-table-bg: #ffff !important;
+  font-family: "Roboto", sans-serif !important;
+}
