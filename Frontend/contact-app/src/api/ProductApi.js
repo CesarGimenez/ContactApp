@@ -1,8 +1,8 @@
 import { URL_BACK } from "../Utils/constants";
 
-export const getContactsApi = async () => {
+export const getProductsApi = async () => {
   try {
-    const url = `${URL_BACK}/api/contacts`;
+    const url = `${URL_BACK}/api/products`;
     const response = await fetch(url);
     const result = await response.json();
     return result;
@@ -11,9 +11,9 @@ export const getContactsApi = async () => {
   }
 };
 
-export const addContactApi = async (data) => {
+export const addProductApi = async (data) => {
   try {
-    const url = `${URL_BACK}/api/contacts`;
+    const url = `${URL_BACK}/api/products`;
     const params = {
       method: "POST",
       headers: {
@@ -29,9 +29,9 @@ export const addContactApi = async (data) => {
   }
 };
 
-export const updateContactApi = async (id, data) => {
+export const updateProductApi = async (id, data) => {
   try {
-    const url = `${URL_BACK}/api/contacts/${id}`;
+    const url = `${URL_BACK}/api/products/${id}`;
     const params = {
       method: "PUT",
       headers: {
@@ -47,9 +47,9 @@ export const updateContactApi = async (id, data) => {
   }
 };
 
-export const deleteContactApi = async (id) => {
+export const deleteProductApi = async (id) => {
   try {
-    const url = `${URL_BACK}/api/contacts/${id}`;
+    const url = `${URL_BACK}/api/products/${id}`;
     const params = {
       method: "DELETE",
     };
@@ -61,10 +61,10 @@ export const deleteContactApi = async (id) => {
   }
 };
 
-export const getContactApi = async (id) => {
+export const getProductApi = async (id) => {
   try {
-    const url = `${URL_BACK}/api/contacts/${id}`;
-    const response = await fetch(url, params);
+    const url = `${URL_BACK}/api/products/${id}`;
+    const response = await fetch(url);
     const result = await response.json();
     return result;
   } catch (error) {
